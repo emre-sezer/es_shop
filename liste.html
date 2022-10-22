@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES Product List</title>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="topBar">
+            <div class="contactInfo">
+              <a class="phone" href="tel:+1 123 456 789">
+                <i class="bi bi-telephone-fill"></i> +1 123 456 789
+              </a>
+              <a class="email" href="mailto:info@company.com">
+                <i class="bi bi-envelope"></i> info@company.com
+              </a>
+            </div>
+            <div class="socialLinks">
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+              <a href=""><i class="bi bi-behance"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="navbar">
+            <div class="logo">
+              <img src="dist/img/logo.png" alt="" class="img-fluid" />
+            </div>
+            <div class="navigation">
+              <nav>
+                <ul>
+                  <li>
+                    <a href="" class="active">HOME</a>
+                  </li>
+                  <li>
+                    <a href="">WOMEN</a>
+                  </li>
+                  <li>
+                    <a href="">MEN</a>
+                  </li>
+                  <li>
+                    <a href="">KIDS</a>
+                  </li>
+                  <li>
+                    <a href="">JEWELLERY</a>
+                  </li>
+                  <li>
+                    <a href="">ACCESSORIES</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="navInfo">
+              <div class="cartInfo">
+                <a href="#">
+                  <span class="cartCount"> 3 </span>
+                  <i class="bi bi-cart-fill"></i>
+                </a>
+              </div>
+              <div class="search">
+                <a href="">
+                  <i class="bi bi-search"></i>
+                </a>
+              </div>
+
+              <div class="hMenu">
+                <a
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="bi bi-list"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="offcanvas offcanvas-end offCanvasMenu"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel"></h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav>
+          <ul>
+            <li>
+              <a href="" class="active">HOME</a>
+            </li>
+            <li>
+              <a href="">WOMEN</a>
+            </li>
+            <li>
+              <a href="">MEN</a>
+            </li>
+            <li>
+              <a href="">KIDS</a>
+            </li>
+            <li>
+              <a href="">JEWELLERY</a>
+            </li>
+            <li>
+              <a href="">ACCESSORIES</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="productList">
+      <div class="container">
+        <div class="row">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Page</a></li>
+              <li class="breadcrumb-item"><a href="">Shop</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Checkout
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="productResultSort">
+            <div class="flex">
+              <div class="result">Showing 1 - 12 of 44 results</div>
+
+              <div class="sort">
+                <select name="productSort" id="productSort">
+                  <option value="Sort by newness">Sort by newness</option>
+                  <option value="Sort by price">Sort by price</option>
+                  <option value="Sort by A - Z">Sort by A - Z</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products row">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+
+                  <div class="productInfo">
+                    <div class="new">New</div>
+                    <div class="sale">Sale</div>
+                  </div>
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="productItem">
+              <div class="productImage">
+                <a href="detay.html">
+                  <img
+                    src="dist/img/product-list-img.png"
+                    alt="Product"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="productName">
+                <a href="">Crown Summit Backpack</a>
+              </div>
+
+              <div class="productPrice">$250.00</div>
+
+              <p><span class="stars">3.4</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="productPagination text-center">
+              <nav class="text-center">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link active" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">></a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="footerLine">
+            <div class="container">
+              <div class="footerTextSM">
+                <div class="footerText">
+                  We're confident we've provided all the best for you. Stay
+                  connect with us.
+                </div>
+                <div class="socialLinks">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-behance"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footerNavContain">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5>INFORMATION</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted"
+                  >Delivery Information</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Discount</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Sitemap</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">My Account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5>MY ACCOUNT</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Sign In</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">View Cart</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">My Wishlist</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Check out</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Track My Order</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5>HELP</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">F.A.Q.</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Shippping</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-6">
+            <h5>CONTACT INFO</h5>
+            <ul class="nav flex-column contactInfo">
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 text-muted address"
+                  ><i class="bi bi-globe"></i> 1234 Your Address, Country.</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="tel:+1 234 5678 9999"
+                  class="nav-link p-0 text-muted phone"
+                  ><i class="bi bi-telephone-fill"></i> +1 234 5678 9999</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="mailto:mail@domain.com"
+                  class="nav-link p-0 text-muted email"
+                  ><i class="bi bi-envelope"></i> mail@domain.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid botBarContain">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="container">
+              <div class="row">
+                <div class="botBar">
+                  <div class="copyright">ES</div>
+                  <div class="paymentOptions">
+                    <img
+                      src="dist/img/payment.png"
+                      alt="Payment Options"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/swiper-bundle.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>

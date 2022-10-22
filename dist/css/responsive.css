@@ -1,0 +1,143 @@
+@media screen and (max-width: 1200px) {
+  header .topBar {
+    padding: 12px 12px;
+  }
+  header .navbar {
+    padding: 15px 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header .navbar .navigation ul li {
+    padding: 0 12px;
+  }
+  footer .footerTextSM .socialLinks a {
+    padding-left: 5px;
+  }
+  footer .footerTextSM .socialLinks a:last-child {
+    padding-right: 5px;
+  }
+  .productInformations {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .navbar .navigation {
+    display: none;
+  }
+  .contactInfo a {
+    font-size: 14px;
+  }
+  header .topBar .contactInfo .phone {
+    padding-right: 15px;
+  }
+  header .topBar .contactInfo i {
+    margin-right: 5px;
+  }
+  header .topBar .contactInfo .email {
+    padding-left: 20px;
+  }
+  .productList .products .productItem {
+    margin-bottom: 35px;
+  }
+  .footerNavContain .row .col-6 {
+    margin-bottom: 15px;
+  }
+  footer .footerNavContain {
+    padding: 50px 12px 35px;
+  }
+  .footerLine .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  header .topBar .socialLinks a {
+    padding-left: 5px;
+  }
+  footer .footerTextSM .footerText {
+    font-size: 14px;
+    padding-right: 3px !important;
+  }
+  footer .footerTextSM .socialLinks,
+footer .footerTextSM .footerText {
+    padding: 12px 0;
+  }
+  footer .footerTextSM {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .footerText {
+    width: 100%;
+  }
+  footer .socialLinks {
+    width: 100%;
+  }
+  .footerLine {
+    padding: 0;
+  }
+  footer .botBarContain .botBar {
+    padding: 12px 0;
+  }
+  .productTabs .nav-link {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .breadcrumb a,
+.breadcrumb li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 475px) {
+  p {
+    font-size: 12px;
+  }
+  .breadcrumb a,
+.breadcrumb li {
+    font-size: 12px;
+  }
+  .productInformations .productTitle,
+.productInformations .price-star .price {
+    font-size: 24px;
+  }
+  .addToCart .addToCartBtn {
+    font-size: 14px;
+  }
+  header .topBar {
+    padding: 5px 12px;
+  }
+  select {
+    font-size: 14px;
+  }
+  .productTabs .nav-link {
+    font-size: 12px;
+  }
+  .contactInfo a,
+header .topBar .socialLinks a {
+    font-size: 12px;
+  }
+  .productTabs .tab-pane,
+.productTabs .nav-link {
+    padding: 15px;
+  }
+  header .topBar .contactInfo .phone {
+    padding-right: 5px;
+  }
+  header .topBar .contactInfo .email {
+    padding-left: 10px;
+  }
+  footer .footerNavContain .nav-item a {
+    font-size: 12px;
+  }
+  footer .footerTextSM .socialLinks,
+footer .footerTextSM .footerText {
+    font-size: 12px;
+  }
+  footer h5 {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+  footer .footerNavContain {
+    padding: 35px 12px 0px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
